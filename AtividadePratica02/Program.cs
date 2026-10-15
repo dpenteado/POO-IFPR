@@ -20,7 +20,6 @@
 
 var contas = new List<ContaBancaria> { new ContaCorrente(5010), new ContaCorrente(100), new ContaPoupanca(700) };
 
-
 foreach (var conta in contas)
 {
     Console.WriteLine($"Tipo de conta: {conta.GetType().Name}\nSaldo Atual: {conta.ObterSaldo():C}\n");
